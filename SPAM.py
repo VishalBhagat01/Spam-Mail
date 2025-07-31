@@ -8,7 +8,7 @@ import streamlit as st
 
 # Load the trained model and vectorizer
 model = joblib.load('Spam_mail.joblib')          # Classifier
-  # TfidfVectorizer
+vectorizer = joblib.load('vectorizer.joblib')# TfidfVectorizer
 
 # App title
 st.set_page_config(page_title="Spam Mail Detection", layout="centered")
